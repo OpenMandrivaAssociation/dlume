@@ -12,7 +12,6 @@ Source0:	http://clay.ll.pl/download/%{name}-%{version}.tar.bz2
 URL:		http://clay.ll.pl/dlume.html
 License:	GPL
 Group:		Office
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	gtk+2-devel >= 2.2.0
 BuildRequires:	libxml2-devel >= 2.4.0 ImageMagick
 
