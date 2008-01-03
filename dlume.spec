@@ -42,13 +42,14 @@ install -m 644 dlume.png %{buildroot}%{_iconsdir}/%{name}.png
 convert dlume.png -geometry 48x48 %{buildroot}%{_liconsdir}/%{name}.png
 convert dlume.png -geometry 16x16 %{buildroot}%{_miconsdir}/%{name}.png
  
-cat > %buildroot/%_menudir/%{name} <<EOF
-?package(%{name}): command="%{name}" \
-needs="X11" \
-icon="%{name}.png" \
-section="Office/Address Books" \
-title="Dlume" \
-longtitle="%{Summary}"
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{name}
+Icon=%{name}
+Categories=Office;ContactManagement;
+Name=Dlume
+Comment=%{Summary}
 EOF
 
 %post 
@@ -64,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc AUTHORS COPYING ChangeLog NEWS README
 %{_bindir}/%{name}
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 %{_mandir}/man1/%{name}.1*
 %{_datadir}/pixmaps/%{name}.png
 %{_miconsdir}/%{name}.png
