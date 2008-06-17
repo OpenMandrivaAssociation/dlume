@@ -42,6 +42,7 @@ install -m 644 dlume.png %{buildroot}%{_iconsdir}/%{name}.png
 convert dlume.png -geometry 48x48 %{buildroot}%{_liconsdir}/%{name}.png
 convert dlume.png -geometry 16x16 %{buildroot}%{_miconsdir}/%{name}.png
  
+mkdir -p %buildroot%{_datadir}/applications/
 cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
 [Desktop Entry]
 Type=Application
