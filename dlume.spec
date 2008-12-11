@@ -14,7 +14,7 @@ License:	GPL
 Group:		Office
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	gtk+2-devel >= 2.2.0
-BuildRequires:	libxml2-devel >= 2.4.0 ImageMagick
+BuildRequires:	libxml2-devel >= 2.4.0 imagemagick
 
 %description
 Dlume is nice, Gtk 2-based address book. 
