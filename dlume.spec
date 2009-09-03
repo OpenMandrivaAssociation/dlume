@@ -1,4 +1,4 @@
-%define rel 3
+%define rel 4
 %define	name	dlume
 %define	version	0.2.4
 %define	release	%mkrel %{rel}
