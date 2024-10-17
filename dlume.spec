@@ -9,7 +9,7 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Source0:	http://clay.ll.pl/download/%{name}-%{version}.tar.bz2
-URL:		http://clay.ll.pl/dlume.html
+URL:		https://clay.ll.pl/dlume.html
 License:	GPL
 Group:		Office
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
