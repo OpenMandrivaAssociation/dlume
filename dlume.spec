@@ -1,7 +1,7 @@
 %define rel 4
 %define	name	dlume
 %define	version	0.2.4
-%define	release	%mkrel %{rel}
+%define	release %{rel}.1
 %define Summary	An easy to use address book
 
 Summary:	%{Summary}
